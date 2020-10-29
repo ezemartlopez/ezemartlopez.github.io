@@ -1,0 +1,53 @@
+* {
+  margin:0;
+  padding:0;
+  /*box-sizing:border-box;*/
+}
+
+body {
+  /* Full height */
+  height:auto;
+  width:auto;
+  display: flex;
+  /*align-items: center;
+  justify-content: center;*/
+  flex-direction: column;
+  font-family: "Raleway Thin", sans-serif;
+  background:#eee;
+  /* Center and scale the image nicely */
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.subs-odometer{
+    opacity:0.60;
+    font-size:48px;
+    color:white;
+    font-family: "Raleway", sans-serif;
+    font-weight:bold;
+    border-radius:10px;
+    width:100%;
+    text-align: center;
+   /* padding: 5px;*/
+    letter-spacing: 4px;
+  }
+  .redPlayer{ background:red;}
+  .bluePlayer{ background:blue;}
+  img{
+    align-self: center;
+    width: 150px;
+    height: 150px;
+    display: block;
+    margin: auto;
+    border-radius: 50%;
+  }
+
+  hr{
+      clear: both;
+      visibility: hidden;
+  }
+  input{
+      text-align: center;
+  }
