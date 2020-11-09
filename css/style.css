@@ -35,7 +35,7 @@ body {
   }
   .redPlayer{ background:red;}
   .bluePlayer{ background:blue;}
-  img{
+  img.imagen{
     align-self: center;
     width: 150px;
     height: 150px;
