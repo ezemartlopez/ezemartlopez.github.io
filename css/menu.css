@@ -1,6 +1,11 @@
+html{
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
 a{
     text-decoration: none;
-    color: black;
+    color:white;
 }
 
 ul{
@@ -18,7 +23,7 @@ input[type="checkbox"]{
 }
 
 nav{
-    background-color: rgba(16,16,16,.5);
+    background-color: rgba(0,0,0,.90);
     width:300px;
     height: 100%;
     left: -300px;
@@ -35,9 +40,32 @@ a{
 }
 a:hover{
     background-color: rgb(147, 206, 214);
+    color: black;
 }
 label{
     padding: 15px;
     position: absolute;
     z-index: 2;
+}
+
+.menu_ul li a{
+    color: white;
+}
+
+a.items{
+    color: white;
+    background-color:rgba(5,5,5,.8);
+}
+a.items_v{
+    color: white;
+    background-color:rgba(5,5,5,.8);
+}
+div.conteiner_items{
+    width: auto;
+    height: auto;
+    overflow: auto;
+    max-height: 150px;
+}
+.conteiner_items a:hover{
+    color:grey;
 }

@@ -5,7 +5,7 @@
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/menu.css">
 </head>
-<body>
+<body background="/pics/destiny_hero.jpg">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="scripts/index.js"></script>
 <script src="scripts/odometer.js"></script>
@@ -14,11 +14,33 @@
     <img src="pics/menu.png" id="menu">
 </label>
 <nav>
-    <ul>
-        <li><a >Home</a></li>
-        <li><a >Home1</a></li>
-        <li><a >Home2</a></li>
-        <li><a >Home3</a></li>
+    <ul class="menu_ul">
+        <li><a >Reiniciar</a></li>
+        <li><a >Modo Match</a></li>
+        <li><a id="btn_toggle">Cambiar avatar rojo</a>
+            <div class="conteiner_items">
+            <a class="items">&emsp;item1</a>
+            <a class="items">&emsp;item2</a>
+            <a class="items">&emsp;item3</a>
+            <a class="items">&emsp;item4</a>
+            <a class="items">&emsp;item5</a>
+            <a class="items">&emsp;item6</a>
+            <a class="items">&emsp;item7</a>
+            <a class="items">&emsp;item8</a>
+            </div>
+        </li>
+        <li><a id="btn_toggle_v">Cambiar avatar azul</a>
+            <div class="conteiner_items">
+            <a class="items_v">&emsp;item1</a>
+            <a class="items_v">&emsp;item2</a>
+            <a class="items_v">&emsp;item3</a>
+            <a class="items_v">&emsp;item4</a>
+            <a class="items_v">&emsp;item5</a>
+            <a class="items_v">&emsp;item6</a>
+            <a class="items_v">&emsp;item7</a>
+            <a class="items_v">&emsp;item8</a>
+            </div>
+        </li>
     </ul>
 </nav>
 
@@ -42,7 +64,8 @@
                      </div>
                     <div class="odometer subs-odometer bluePlayer" id="playerB">0</div>
                     <div><hr></div>
-                    <input class="form-control inputnew input-lg" type="number" id="entradaB"></input>
+                            <input class="form-control inputnew input-lg" type="number" id="entradaB"></input>
+                    
               </div>
           </div>
     </div>

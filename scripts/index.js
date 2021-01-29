@@ -91,20 +91,30 @@ setTimeout(function(){
           //Codigo que se ejecuta si se apreta ENTER 
             var val=$("#entradaB").val();
             var num=parseInt(val,10);
-            var sum=lifeA + num;
+            var sum=lifeB + num;
             if(sum<=0){
                 $("#playerB").html(0);
-                lifeA=0;
+                lifeB=0;
                 audio.play();
                 win("#redPlayer","blue","url('pics/destiny_hero.jpg')",endDuel);	
             }
             else{
                 $("#playerB").html(sum);
                 audio.play();
-                lifeA=sum;
+                lifeB=sum;
             }
         }
     });
-       
-
+    $('.items').hide();
+    $('.items_v').hide();
+      // display items
+     $("#btn_toggle").on( "click", function() {	 
+         $('.items').toggle(500);
+     });
+     //===============
+     $("#btn_toggle_v").on( "click", function() {	 
+      $('.items_v').toggle(500);
   });
+  });
+
+

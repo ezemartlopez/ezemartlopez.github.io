@@ -6,14 +6,14 @@
 
 body {
   /* Full height */
-  height:auto;
-  width:auto;
+  height:100%;
+  width: 100%;
   display: flex;
   /*align-items: center;
   justify-content: center;*/
   flex-direction: column;
   font-family: "Raleway Thin", sans-serif;
-  background:#eee;
+ /* background:black;*/
   /* Center and scale the image nicely */
   background-position: center center;
   background-repeat: no-repeat;
@@ -50,4 +50,9 @@ body {
   }
   input{
       text-align: center;
+  }
+  div .row{
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 40px;
   }
