@@ -47,6 +47,18 @@ setTimeout(function(){
 
 
 
+function clearPlayer(id){
+  setTimeout(function(){
+      $(id).remove();
+     $("#starter").hide();
+    $("#reiniciar").show();
+   //$("#reiniciar").css("display","flex");
+    songEnd.play();
+  } ,3000);
+  
+ 
+}
+
   window.odometerOptions = {
     format: '(ddd).dd'
   };
@@ -55,7 +67,9 @@ setTimeout(function(){
     var lifeB=0;
 
 
+//eventos al cargar la pagina
   $(document).ready(function(){
+
     $("#starter").click(function(){
         $("#playerA").html(8000);
         $("#playerB").html(8000);
@@ -63,7 +77,11 @@ setTimeout(function(){
           lifeA=8000;
           lifeB=8000;
     });
-    
+
+
+    // evento reiniciar pagina
+    $("#reiniciar").click(function(){location.reload();});
+
     //Jugador Rojo
     $("#entradaA").keypress(function(e){
         if(e.which==13){
@@ -75,7 +93,8 @@ setTimeout(function(){
                 $("#playerA").html(0);
                 lifeA=0;
                 audio.play();
-                win("#bluePlayer","red","url('pics/blue_eyes.png')",endDuel);	
+                //win("#bluePlayer","red","url('pics/blue_eyes.png')",endDuel);	
+                clearPlayer("#box-A");
             }
             else{
                 $("#playerA").html(sum);
@@ -96,7 +115,8 @@ setTimeout(function(){
                 $("#playerB").html(0);
                 lifeB=0;
                 audio.play();
-                win("#redPlayer","blue","url('pics/destiny_hero.jpg')",endDuel);	
+                //win("#redPlayer","blue","url('pics/destiny_hero.jpg')",endDuel);
+                clearPlayer("#box-B");
             }
             else{
                 $("#playerB").html(sum);
